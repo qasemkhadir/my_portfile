@@ -5,13 +5,13 @@
 }
 :root {
     --bg-c : rgb(17, 83, 84);
-    --head-colore :rgb(0, 241, 189);
+    --head-colore :rgb(183, 255, 0);
     --p-colore: #a5a5a5;
 }
 h1,h2,th{
     color: var(--head-colore);
 }
-p,li,td{
+p{
     color: var(--p-colore);
 }
 body{
@@ -44,6 +44,7 @@ header nav ul li:hover{
 main table{
     width: 90%;
     margin: auto;
+    pointer-events: none;
 
 }
 th,td{
@@ -67,11 +68,47 @@ section .inputs input{
 }
 section .buttons button{
     margin-top: 6px;
-    width: 80%;
+    width: 90%;
     padding: 2px;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    outline: rgb(0, 255, 21) 0.1px solid;
+    outline: rgb(0, 115, 255) 0.1px solid;
     border: none;
+    letter-spacing: none;
+    transition: 0.5s;
+
+}
+section .buttons button:hover{
+    letter-spacing: 3px;
+    transform: scale(1.05);
+
+}
+.DELL{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto ;
+}
+#btn_remove{
+    width: 100%;
+}
+td ,li{
+    color: #ffffff;
+}
+#btn_remove{
+    width: 30%;
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px white;
+    padding: 3px;
+    margin: 10px;
+}
+#btn_remove:hover{
+    letter-spacing: 3px;
+    transform: scale(1.05);
 }
