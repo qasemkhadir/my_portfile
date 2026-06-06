@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-c : rgb(17, 83, 84);
+    --head-colore :rgb(0, 241, 189);
+    --p-colore: #a5a5a5;
+}
+h1,h2,th{
+    color: var(--head-colore);
+}
+p,li,td{
+    color: var(--p-colore);
+}
+body{
+    background-color: var(--bg-c);
+    height: 100vh;
+}
+header{
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+}
+header nav ul li{
+    list-style: none;
+    border: none #aaa 1px;
+    padding: 5px;
+    transition: 1s;
+}
+header nav ul li:hover{
+    border: solid #aaa 1px;
+    cursor: pointer;
+}
+main table{
+    width: 90%;
+    margin: auto;
+
+}
+th,td{
+    padding: 3px;
+    text-align: center;
+}
+section{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section .inputs input{
+    margin-top: 6px;
+    padding: 6px;
+    width: 90%;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(3, 225, 147, 0.429) ;
+}
+section .buttons button{
+    margin-top: 6px;
+    width: 80%;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    outline: rgb(0, 255, 21) 0.1px solid;
+    border: none;
+}
